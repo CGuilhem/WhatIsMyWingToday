@@ -2,6 +2,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const { token } = require('./config.json');
+const { PermissionsBitField } = require('discord.js');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
@@ -34,18 +35,24 @@ for (const file of eventFiles) {
 	}
 }
 
-client.login(token);
-
-// Créez un horloge pour effectuer une action à une heure précise
 setInterval(() => {
   let date = new Date();
   let hours = date.getHours();
   let minutes = date.getMinutes();
 
-  if (hours === 9 && minutes === 20) {
+  if (hours === 23 && minutes === 39) {
     // Effectuez votre action ici
-    console.log('Action effectuée à 9h20');
+    const guild = client.guilds.cache.first();
+    const memberID = '1072647393067139172';
+
+    guild.members.fetch(memberID)
+      .then(member => {
+        if (!member) return console.error("Member not found");
+        return member.setNickname("Nouveau pseudonyme");
+      })
+      .then(() => console.log("Pseudo modifié avec succès"))
+      .catch(console.error);
   }
 }, 60 * 1000); // Vérifiez toutes les minutes
 
-
+client.login(token);
