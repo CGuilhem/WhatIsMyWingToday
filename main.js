@@ -2,7 +2,6 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const { token, memberId } = require('./config.json');
-const { PermissionsBitField } = require('discord.js');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
@@ -40,7 +39,7 @@ setInterval(() => {
   let hours = date.getHours();
   let minutes = date.getMinutes();
 
-  if (hours === 00 && minutes === 14) {
+  if (hours === 09 && minutes === 20) {
     const guild = client.guilds.cache.first();
 
     guild.members.fetch(memberId)
@@ -57,12 +56,12 @@ setInterval(() => {
         //Get a random name from the array
         const randomName = namesJson.names[Math.floor(Math.random() * namesJson.names.length)];
 
-        generalChannel.send(`Aujourd'hui, <@${memberId}> est de ${randomName.wing} !`);
+        generalChannel.send(`Aujourd'hui, Guilhem est de ${randomName.wing} et incarnera donc... ${randomName.name} !`);
         return member.setNickname(randomName.name);
       })
       .then(() => console.log("Pseudo modifié avec succès"))
       .catch(console.error);
   }
-}, 60 * 100);
+}, 60 * 1000);
 
 client.login(token);
