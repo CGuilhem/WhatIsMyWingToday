@@ -1,7 +1,7 @@
 const fs = require('node:fs');
 const path = require('node:path');
 const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
-const { token } = require('./config.json');
+const { token, memberId } = require('./config.json');
 const { PermissionsBitField } = require('discord.js');
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -40,19 +40,29 @@ setInterval(() => {
   let hours = date.getHours();
   let minutes = date.getMinutes();
 
-  if (hours === 23 && minutes === 39) {
-    // Effectuez votre action ici
+  if (hours === 00 && minutes === 14) {
     const guild = client.guilds.cache.first();
-    const memberID = '1072647393067139172';
 
-    guild.members.fetch(memberID)
+    guild.members.fetch(memberId)
       .then(member => {
         if (!member) return console.error("Member not found");
-        return member.setNickname("Nouveau pseudonyme");
+
+        const generalChannel = guild.channels.cache.find(channel => channel.name === 'général');
+        if (!generalChannel) return console.error('Channel not found');
+
+        //Read names.json to extract the array called names
+        const names = fs.readFileSync('./names.json');
+        const namesJson = JSON.parse(names);
+
+        //Get a random name from the array
+        const randomName = namesJson.names[Math.floor(Math.random() * namesJson.names.length)];
+
+        generalChannel.send(`Aujourd'hui, <@${memberId}> est de ${randomName.wing} !`);
+        return member.setNickname(randomName.name);
       })
       .then(() => console.log("Pseudo modifié avec succès"))
       .catch(console.error);
   }
-}, 60 * 1000); // Vérifiez toutes les minutes
+}, 60 * 100);
 
 client.login(token);
