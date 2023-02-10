@@ -13,11 +13,11 @@ module.exports = {
         //Get a random name from the array
         const randomName = namesJson.names[Math.floor(Math.random() * namesJson.names.length)];
 
-        const originalNickName = interaction.member.nickname;
+        const originalUserName = interaction.member.user.username ? interaction.member.user.username : "Anonyme";
 
         //Give the random name to the user
         await interaction.member.setNickname(randomName.name);
 
-        await interaction.reply(`Aujourd'hui, ${originalNickName} est de ${randomName.wing} et incarnera donc... ${randomName.name} !`);
+        await interaction.reply(`Aujourd'hui, ${originalUserName} est de ${randomName.wing} et incarnera donc... ${randomName.name} !`);
 	},
 };
