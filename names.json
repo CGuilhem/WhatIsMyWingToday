@@ -1,128 +1,124 @@
 {
-    "names": [
-        {
-            "name": "👨‍💻 XSS la dévouée 👩‍💻",
-            "wing": "Gauche"
-        },
-        {
-            "name": "⛪ Pierre l'abbé tease 🎁",
-            "wing": "Gauche"
-        },
-        {
-            "name": "🦅 Ségolaigle Royal ⚜",
-            "wing": "Gauche"
-        },
-        {
-            "name": "📚 Marx la menace 🔴",
-            "wing": "Gauche"
-        },
-        {
-            "name": "🏛️ La République, C MÔA 😡",
-            "wing": "Gauche"
-        },
-        {
-            "name": "🇫🇷 Le Patriote Droitard 🇫🇷",
-            "wing": "Droite"
-        },
-        {
-            "name": "💸 Balkany l'exilé 💸",
-            "wing": "Droite"
-        },
-        {
-            "name": "💶 Fillon le fictif 👻",
-            "wing": "Droite"
-        },
-        {
-            "name": "💰 Sarkozy le financé 💰",
-            "wing": "Droite"
-        },
-        {
-            "name": "Jos-Pain dans ta gueule !",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Tartine au Brie",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Carla Brownies",
-            "wing": "Droite"
-        },
-        {
-            "name": "Adrien Claquennens",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Marion-Maréchal Pétain",
-            "wing": "Droite"
-        },
-        {
-            "name": "Marine La Peine",
-            "wing": "Droite"
-        },
-        {
-            "name": "Louis Fort-Boyard",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Patrick Balkaniveau",
-            "wing": "Droite"
-        },
-        {
-            "name": "Jacques Chiracaille",
-            "wing": "Droite"
-        },
-        {
-            "name": "François Tom-Hollande",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Alexis Corbière & Bernie",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Olivier Fèble",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Valérie PécrHess",
-            "wing": "Droite"
-        },
-        {
-            "name": "Philippe Galoche",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Christophe CasseTesNerfs",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Christophe CasseTesNerfs",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Gerald Darmanin De Riv",
-            "wing": "Droite"
-        },
-        {
-            "name": "Elisabeth Borne Electrique",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Nathalie Marthaud",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Yannick Ragot",
-            "wing": "Gauche"
-        },
-        {
-            "name": "Damien Abacadabras",
-            "wing": "Droite"
-        },
-        {
-            "name": "David La Douille",
-            "wing": "Droite"
-        }
-    ]
+  "names": [
+    {
+      "name": "👨‍💻 XSS la dévouée 👩‍💻",
+      "wing": "Gauche"
+    },
+    {
+      "name": "⛪ Pierre l'abbé tease 🎁",
+      "wing": "Gauche"
+    },
+    {
+      "name": "🦅 Ségolaigle Royal ⚜",
+      "wing": "Gauche"
+    },
+    {
+      "name": "📚 Marx la menace 🔴",
+      "wing": "Gauche"
+    },
+    {
+      "name": "🏛️ La République, C MÔA 😡",
+      "wing": "Gauche"
+    },
+    {
+      "name": "🇫🇷 Le Patriote Droitard 🇫🇷",
+      "wing": "Droite"
+    },
+    {
+      "name": "💸 Balkany l'exilé 💸",
+      "wing": "Droite"
+    },
+    {
+      "name": "💶 Fillon le fictif 👻",
+      "wing": "Droite"
+    },
+    {
+      "name": "💰 Sarkozy le financé 💰",
+      "wing": "Droite"
+    },
+    {
+      "name": "🍞 Jos-Pain dans ta gueule 👴",
+      "wing": "Gauche"
+    },
+    {
+      "name": "🍞 Tartine au Brie 🧀",
+      "wing": "Gauche"
+    },
+    {
+      "name": "👩 Carla Brownies 🥮",
+      "wing": "Droite"
+    },
+    {
+      "name": "👩 Adrien Claquennens 👋",
+      "wing": "Gauche"
+    },
+    {
+      "name": "✝️ Marion-Maréchal Pétain 🇫🇷",
+      "wing": "Extrême-droite"
+    },
+    {
+      "name": "🇫🇷 Marine La Peine 🐈",
+      "wing": "Extrême-droite"
+    },
+    {
+      "name": "🥇 Louis Fort-Boyard 💰",
+      "wing": "Gauche"
+    },
+    {
+      "name": "🚬 Patrick Balkaniveau ⛓️",
+      "wing": "Droite"
+    },
+    {
+      "name": "🇫🇷 Jacques Chiracaille 🍎",
+      "wing": "Droite"
+    },
+    {
+      "name": "🛵 François Tom-Hollande 🦸‍♂️",
+      "wing": "Gauche mais pas trop"
+    },
+    {
+      "name": "🙎‍♂️ Alexis Corbière & Bernie 🐶",
+      "wing": "Gauche"
+    },
+    {
+      "name": "🌹 Olivier Fèble 💪",
+      "wing": "Gauche"
+    },
+    {
+      "name": "🇫🇷 Valérie PécrHess 💸",
+      "wing": "Droite"
+    },
+    {
+      "name": "👴 Philippe Galoche 👅",
+      "wing": "Gauche"
+    },
+    {
+      "name": "🍾 Christophe CasseTesNerfs 🥋",
+      "wing": "Droite"
+    },
+    {
+      "name": "🖕 Gerald Darmanin De Riv 🖕",
+      "wing": "Droite mais en vrai d'extrême-droite"
+    },
+    {
+      "name": "👵 Elisabeth Borne Electrique ⚡",
+      "wing": "soi-disant de gauche"
+    },
+    {
+      "name": "🅾️ Nathalie Marthaud 🔨",
+      "wing": "Gauche"
+    },
+    {
+      "name": "🍃 Yannick Ragot 🗣️",
+      "wing": "Gauche"
+    },
+    {
+      "name": "🧙‍♂️ Damien Abacadabras 👮‍♂️",
+      "wing": "Droite en faisant semblant d'être un flic pour casser du manifestant"
+    },
+    {
+      "name": "🥋 David La Douille 🥋",
+      "wing": "Droite"
+    }
+  ]
 }
