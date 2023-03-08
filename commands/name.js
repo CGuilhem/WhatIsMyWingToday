@@ -64,7 +64,13 @@ const execute = async (interaction) => {
 
   const word = await randomWord(course);
 
-  await interaction.member.setNickname(word + " " + suffix);
+  await interaction.member.setNickname(
+    "🏫 " + word.charAt(0).toUpperCase() + word.slice(1) + " " + suffix + " 💻"
+  );
+
+  await interaction.reply(
+    `Profite bien de ton nouveau pseudo sponsorisé par SDV et le module du jour ${interaction.member} !`
+  );
 };
 
 //Exports
