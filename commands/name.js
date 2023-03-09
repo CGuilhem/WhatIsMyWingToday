@@ -6,6 +6,8 @@ const CALENDAR =
 
 const URI = "https://api.datamuse.com/words?ml=";
 
+const ICSJSON = null
+
 //Get a random number between start and end
 const random = (start, end) => {
   return Math.floor(Math.random() * (end - start) + start);
@@ -13,11 +15,16 @@ const random = (start, end) => {
 
 //Convert the ICS file to JSON
 const convertICStoJSON = async () => {
+
+  if (ICSJSON) return ICSJSON
+
   const data = await fetch(CALENDAR);
 
   const text = await data.text();
 
-  return icsToJson.default(text);
+  ICSJSON = icsToJson.default(text)
+
+  return ICSJSON;
 };
 
 //Find the date of the current course based on the ICS file
