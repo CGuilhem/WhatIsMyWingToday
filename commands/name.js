@@ -6,7 +6,7 @@ const CALENDAR =
 
 const URI = "https://api.datamuse.com/words?ml=";
 
-const ICSJSON = null
+let ICSJSON = null;
 
 //Get a random number between start and end
 const random = (start, end) => {
@@ -15,14 +15,13 @@ const random = (start, end) => {
 
 //Convert the ICS file to JSON
 const convertICStoJSON = async () => {
-
-  if (ICSJSON) return ICSJSON
+  if (ICSJSON) return ICSJSON;
 
   const data = await fetch(CALENDAR);
 
   const text = await data.text();
 
-  ICSJSON = icsToJson.default(text)
+  ICSJSON = icsToJson.default(text);
 
   return ICSJSON;
 };
