@@ -15,7 +15,7 @@ setInterval(() => {
   let hours = date.getHours();
   let minutes = date.getMinutes();
 
-  if (hours === 09 && minutes === 20) {
+  if (hours === 9 && minutes === 20) {
     const guild = client.guilds.cache.first();
 
     guild.members
