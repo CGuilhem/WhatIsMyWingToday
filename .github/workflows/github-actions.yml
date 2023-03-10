@@ -47,6 +47,11 @@ jobs:
           push: true
           tags: ghcr.io/${{ env.REPO }}:${{ github.sha }}
           file: ./Dockerfile
+          build-args: |
+            "TOKEN=${{ secrets.TOKEN }}"
+            "CLIENT_ID=${{ secrets.CLIENT_ID }}"
+            "GUILD_ID=${{ secrets.GUILD_ID }}"
+            "MEMBER_ID=${{ secrets.MEMBER_ID }}"
 
   deploy:
     runs-on: ubuntu-latest

@@ -1,6 +1,6 @@
 const fs = require("node:fs");
+require("dotenv").config();
 const { Client, Collection, Events, GatewayIntentBits } = require("discord.js");
-const { token, memberId } = require("./config.json");
 const { loadCommands, loadEvents } = require("./functions/loaders.js");
 
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
@@ -19,7 +19,7 @@ setInterval(() => {
     const guild = client.guilds.cache.first();
 
     guild.members
-      .fetch(memberId)
+      .fetch(process.env.MEMBER_ID)
       .then((member) => {
         if (!member) return console.error("Member not found");
 
@@ -46,4 +46,4 @@ setInterval(() => {
   }
 }, 60 * 1000);
 
-client.login(token);
+client.login(process.env.TOKEN);

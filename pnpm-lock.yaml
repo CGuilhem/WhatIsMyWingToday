@@ -2,6 +2,7 @@ lockfileVersion: 5.4
 
 specifiers:
   discord.js: ^14.7.1
+  dotenv: ^16.0.3
   i: ^0.3.7
   ics-to-json: ^1.0.0
   npm: ^9.6.0
@@ -9,6 +10,7 @@ specifiers:
 
 dependencies:
   discord.js: 14.7.1
+  dotenv: 16.0.3
   i: 0.3.7
   ics-to-json: 1.0.0
   npm: 9.6.0
@@ -444,6 +446,11 @@ packages:
     transitivePeerDependencies:
       - bufferutil
       - utf-8-validate
+    dev: false
+
+  /dotenv/16.0.3:
+    resolution: {integrity: sha512-7GO6HghkA5fYG9TYnNxi14/7K9f5occMlp3zXAuSxn7CKCxt9xbNWG7yF8hTCSUchlfWSe3uLmlPfigevRItzQ==}
+    engines: {node: '>=12'}
     dev: false
 
   /eastasianwidth/0.2.0:
