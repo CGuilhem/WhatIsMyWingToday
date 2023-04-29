@@ -3,6 +3,11 @@ require("dotenv").config();
 const { Client, Collection, Events, GatewayIntentBits } = require("discord.js");
 const { loadCommands, loadEvents } = require("./functions/loaders.js");
 
+console.log(process.env.TOKEN);
+console.log(process.env.MEMBER_ID);
+console.log(process.env.CLIENT_ID);
+console.log(process.env.GUILD_ID); //
+
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 client.commands = new Collection();
